@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { State } from "../lib/action";
 import SendMsgForm from "./sendmsgform";
 import ToastsBox from "./toasts";

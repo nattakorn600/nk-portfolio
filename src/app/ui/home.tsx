@@ -18,7 +18,7 @@ export default function HomePage({
             
             <div className="flex flex-col justify-start mx-auto lg:mx-0 lg:justify-center h-screen w-[90%] lg:pl-[10%] gap-4 z-20 lg:w-[730px]">
                 <div className="flex items-center text-5xl mx-auto lg:mx-0 font-normal text-dark-50 gap-4">
-                    <span>Hi, I'm</span>
+                    <span>{`Hi, I'm`}</span>
                     <hr className="none-inline lg:hidden w-[210px]"/>
                 </div>
                 

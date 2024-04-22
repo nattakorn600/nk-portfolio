@@ -23,7 +23,7 @@ export default function AboutPage({
                   <div className='flex flex-col md:flex-row justify-center mt-6 md:mt-2 gap-6 md:gap-16 md:mx-40'>
                     <div className='flex flex-col justify-center items-center gap-2 md:gap-4'>
                       <div className='flex justify-center items-center w-[130px] h-[130px] md:w-[170px] md:h-[170px] rounded-full border-[5px] border-dark-700'>
-                        <img className='w-[110px] h-[110px] md:w-[150px] md:h-[150px] object-cover rounded-full' src='profile.jpg' alt='Nattakorn profile picture' />
+                        <Image className='md:w-[150px] md:h-[150px] rounded-full' width={110} height={110} src="/profile.jpg" objectFit="cover" alt='Nattakorn profile picture' />
                       </div>
                       <span className='text-lg font-medium'>Nattakorn Khunart</span>
                       <div className='flex justify-center items-center gap-4'>
@@ -41,12 +41,12 @@ export default function AboutPage({
                     <div className='flex flex-col justify-center items-center gap-4 mx-[24%] md:mx-0 md:max-w-[800px]'>
                       <p className='font-light'>
                         <span>
-                          A multi-talented full-stack developer, proficient in software development, ERP systems, websites, mobile applications, and embedded systems. With a diverse skill set and extensive experience, I excel in tackling various challenges across the technology spectrum. From crafting intuitive user interfaces to optimizing back-end processes and integrating complex systems.
+                          {`A multi-talented full-stack developer, proficient in software development, ERP systems, websites, mobile applications, and embedded systems. With a diverse skill set and extensive experience, I excel in tackling various challenges across the technology spectrum. From crafting intuitive user interfaces to optimizing back-end processes and integrating complex systems.`}
                         </span>
                       </p>
                       <p className='font-light'>
                         <span>
-                          I'm excited to bring my skills and experience to new opportunities and contribute to innovative projects that push the boundaries of what's possible in technology.
+                          {`I'm excited to bring my skills and experience to new opportunities and contribute to innovative projects that push the boundaries of what's possible in technology.`}
                         </span>
                       </p>
                     </div>

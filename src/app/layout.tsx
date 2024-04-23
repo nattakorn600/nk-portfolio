@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`dark ${inter.className}`}>
-        <NavLinks className="block fixed h-[60px] w-full z-[997] bg-dark-100 bg-opacity-70 backdrop-blur-md right-[10px]"/>
+        <NavLinks className="fixed h-[60px] w-full z-[997] bg-dark-100 bg-opacity-70 backdrop-blur-md sm:right-[10px]"/>
         <div className="bg-white dark:bg-dark-100 z-10">{children}</div>
       </body>
     </html>

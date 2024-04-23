@@ -19,7 +19,7 @@ export default function ProjectsPage({
             
             <div className="flex flex-wrap gap-6 shadow-md justify-center items-center my-10 lg:my-16 mx-20" >
                 {(projectsData).map((project: ProjectType) => (
-                    <ProjectCard key={project.title} className='h-[280px] w-[420px]' data={project} />
+                    <ProjectCard key={project.title} className='h-[240px] w-[360px] sm:h-[280px] sm:w-[420px]' data={project} />
                 ))}
             </div>
             <div className='absolute block bg-dark-500 blur-[250px] w-[200px] h-[200px] z-10 rounded-full left-[-100px] top-[25%]'/>

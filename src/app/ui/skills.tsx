@@ -21,8 +21,8 @@ export default function SkillsPage({
                 {skillsData.map((skill: SkillType) => (
                     <div  key={skill.skill} className="flex flex-col gap-3 justify-center items-center">
                         <div className="w-[42px] h-[42px] md:w-[50px] md:h-[50px]">
-                            <Image className="hidden md:block w-full h-full" src={skill.icon} width={50} height={50} alt={`${skill.skill} skill`}/>
-                            <Image className="block md:hidden w-full h-full" src={skill.icon} width={42} height={42} alt={`${skill.skill} skill mobile`}/>
+                            <Image className="hidden md:block w-full h-full" src={skill.icon} width={50} height={50} alt={`${skill.skill} skill`} priority/>
+                            <Image className="block md:hidden w-full h-full" src={skill.icon} width={42} height={42} alt={`${skill.skill} skill mobile`} priority/>
                         </div>
                         <span className="text-sm md:text-base">{skill.skill}</span>
                     </div>

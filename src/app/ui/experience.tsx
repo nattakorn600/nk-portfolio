@@ -12,8 +12,8 @@ export default function ExperiencePage({
     return (
         <section id={id} className={className}>
             <div className='absolute block lg:ml-[23%] top-4 xl:top-3 lg:top-[90px] bg-dark-500 w-[50px] h-[50px] rounded-full blur-[80px]' />
-            <h2 className="lg:ml-[20%] my-4 mt-16 lg:mt-24 text-4xl md:text-5xl text-dark-300 drop-shadow-lg">Experience</h2>
-            <div className="my-6 lg:mx-[15%]">
+            <h2 className="lg:ml-[20%] my-4 mt-16 lg:mt-24 text-3xl sm:text-4xl md:text-5xl text-dark-300 drop-shadow-lg">Experience</h2>
+            <div className="my-2 sm:my-6 lg:mx-[15%]">
                 {experiencesData.map((experience: ExperienceType, index: number) => (
                     <Timeline key={index} index={index} data={experience}/>
                 ))}

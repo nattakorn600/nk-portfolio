@@ -17,15 +17,15 @@ export default function ProjectCard({
             <div className='absolute block bg-dark-500 w-[75px] h-[75px] z-10 rounded-full opacity-0 left-12 blur-[100px] transition-all ease-in-out duration-300 group-hover:opacity-100' />
             <div className='absolute block bg-dark-600 w-[75px] h-[75px] z-10 rounded-full opacity-0 pointer-events-none bottom-[-35px] left-20 blur-[75px] transition-all ease-in-out duration-300 group-hover:opacity-100' />
 
-            <div className='absolute flex flex-col px-8 py-4 gap-4 mx-auto w-full h-full'>
+            <div className='absolute flex flex-col px-4 py-2 sm:px-8 sm:py-4 gap-2 sm:gap-4 mx-auto w-full h-full'>
                 <h3 className="text-lg sm:text-xl text-center font-normal text-transparent bg-clip-text bg-gradient-to-r from-dark-900 to-dark-800 opacity-0 transition-all translate-y-[20px] duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-hover:delay-250">{data.title}</h3>
                 <p className="text-sm sm:text-base font-normal text-dark-950 opacity-0 transition-all translate-y-[20px] duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-hover:delay-200">
                     <span>{data.description}</span>
                 </p>
 
-                <div className="flex gap-1 opacity-0 transition-all translate-x-[20px] duration-300 group-hover:translate-x-0 group-hover:opacity-100 group-hover:delay-150">
+                <div className="flex flex-wrap gap-1 opacity-0 transition-all translate-x-[20px] duration-300 group-hover:translate-x-0 group-hover:opacity-100 group-hover:delay-150">
                     {data.languages.map(language => (
-                        <span key={language} className="text-xs font-normal bg-[#223A72] px-2 py-1 rounded-full">{language}</span>
+                        <span key={language} className="text-xs font-normal bg-[#223A72] px-2 py-px sm:py-1 rounded-full">{language}</span>
                     ))}
                 </div>
 

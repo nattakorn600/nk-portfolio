@@ -53,7 +53,7 @@ export default function ContactPage({
             <div className="flex flex-col items-center min-h-screen pt-10 lg:pt-12 xl:py-2t z-30">
                 <div className="flex items-center w-[900px]">
                     <hr className="grow h-px mx-auto my-10 rounded bg-dark-50"></hr>
-                    <h2 className='mx-4 text-4xl md:text-5xl text-dark-300 drop-shadow-lg'>Contact Me</h2>
+                    <h2 className='mx-4 text-3xl sm:text-4xl md:text-5xl text-dark-300 drop-shadow-lg'>Contact Me</h2>
                     <hr className="grow h-px mx-auto my-10 rounded bg-dark-50"></hr>
                 </div>
                 <span className="text-base xl:text-lg font-normal text-dark-950 text-center max-w-[90%] w-[500px]">
@@ -61,81 +61,96 @@ export default function ContactPage({
                 </span>
 
                 <div className="flex flex-col h-full xl:flex-row w-3/4 my-8 xl:my-16 justify-center items-center gap-6 xl:gap-0">
-                    <div className="relative flex flex-col w-full min-w-[400px] w-[95%] max-w-[600px] xl:max-w-[100%] xl:w-1/2 justify-start items-center gap-4 xl:gap-16">
+                    <div className="relative flex flex-col w-full min-w-[320px] sm:min-w-[400px] w-[95%] max-w-[600px] xl:max-w-[100%] xl:w-1/2 justify-start items-center gap-4 xl:gap-16">
                         <div className="flex w-full h-full xl:w-auto justify-start xl:items-center mx-auto xl:gap-4">
-                            <div className="flex justify-center items-center w-[46px] h-[46px] md:w-[54px] md:h-[54px] xl:w-[64px] xl:h-[64px] bg-dark-50 rounded-full">
-                                <Image className="hidden xl:block md:hidden" src="/contacts/address.svg"
+                            <div className="flex justify-center items-center w-[40px] h-[40px] sm:w-[46px] sm:h-[46px] md:w-[54px] md:h-[54px] xl:w-[64px] xl:h-[64px] bg-dark-50 rounded-full">
+                                <Image className="hidden xl:block md:hidden sm:hidden" src="/contacts/address.svg"
                                     alt="Address"
                                     width={28}
                                     height={28}
                                 />
-                                <Image className="hidden xl:hidden md:block" src="/contacts/address.svg"
+                                <Image className="hidden xl:hidden md:block sm:hidden" src="/contacts/address.svg"
                                     alt="Address middle"
                                     width={24}
                                     height={24}
                                 />
-                                <Image className="block xl:hidden md:hidden" src="/contacts/address.svg"
+                                <Image className="hidden xl:hidden md:hidden sm:block" src="/contacts/address.svg"
                                     alt="Address mobile"
                                     width={20}
                                     height={20}
                                 />
+                                <Image className="block xl:hidden md:hidden sm:hidden" src="/contacts/address.svg"
+                                    alt="Address mobile"
+                                    width={17}
+                                    height={17}
+                                />
                             </div>
-                            <div className="flex flex-col mx-4 w-[320px] gap-1">
+                            <div className="flex flex-col mx-2 sm:mx-4 w-[85%] min-w-[260px] sm:w-[320px] gap-1">
                                 <span className="hidden xl:block text-xl font-medium text-dark-700">Address</span>
-                                <span className="text-lg font-normal">120/39 C Building, Lumpini Condo Town Bodindecha - Ramkhamhaeng</span>
+                                <span className="text-base sm:text-lg font-normal">120/39 C Building, Lumpini Condo Town Bodindecha - Ramkhamhaeng</span>
                             </div>
                         </div>
 
                         <div className="flex w-full h-full xl:w-auto justify-start items-center mx-auto xl:gap-4">
-                            <div className="flex justify-center items-center w-[46px] h-[46px] md:w-[54px] md:h-[54px] xl:w-[64px] xl:h-[64px] bg-dark-50 rounded-full">
-                                <Image className="hidden xl:block md:hidden" src="/contacts/phone.svg"
+                            <div className="flex justify-center items-center w-[40px] h-[40px] sm:w-[46px] sm:h-[46px] md:w-[54px] md:h-[54px] xl:w-[64px] xl:h-[64px] bg-dark-50 rounded-full">
+                                <Image className="hidden xl:block md:hidden sm:hidden" src="/contacts/phone.svg"
                                     alt="Phone"
                                     width={28}
                                     height={28}
                                 />
-                                <Image className="hidden xl:hidden md:block" src="/contacts/phone.svg"
+                                <Image className="hidden xl:hidden md:block sm:hidden" src="/contacts/phone.svg"
                                     alt="Phone middle"
                                     width={24}
                                     height={24}
                                 />
-                                <Image className="block xl:hidden md:hidden" src="/contacts/phone.svg"
+                                <Image className="hidden xl:hidden md:hidden sm:block" src="/contacts/phone.svg"
                                     alt="Phone mobile"
                                     width={20}
                                     height={20}
                                 />
+                                <Image className="block xl:hidden md:hidden sm:hidden" src="/contacts/phone.svg"
+                                    alt="Phone mobile"
+                                    width={17}
+                                    height={17}
+                                />
                             </div>
-                            <div className="flex flex-col mx-4 w-[320px] gap-1">
+                            <div className="flex flex-col mx-2 sm:mx-4 w-[85%] min-w-[260px] sm:w-[320px] gap-1">
                                 <span className="hidden xl:block text-xl font-medium text-dark-700">Phone</span>
-                                <span className="text-lg font-normal">096-2756567</span>
+                                <span className="text-base sm:text-lg font-normal">096-2756567</span>
                             </div>
                         </div>
 
                         <div className="flex w-full h-full xl:w-auto justify-start items-center mx-auto xl:gap-4">
-                            <div className="flex justify-center items-center w-[46px] h-[46px] md:w-[54px] md:h-[54px] xl:w-[64px] xl:h-[64px] bg-dark-50 rounded-full">
-                                <Image className="hidden xl:block md:hidden" src="/contacts/email.svg"
+                            <div className="flex justify-center items-center w-[40px] h-[40px] sm:w-[46px] sm:h-[46px] md:w-[54px] md:h-[54px] xl:w-[64px] xl:h-[64px] bg-dark-50 rounded-full">
+                                <Image className="hidden xl:block md:hidden sm:hidden" src="/contacts/email.svg"
                                     alt="Email"
                                     width={28}
                                     height={28}
                                 />
-                                <Image className="hidden xl:hidden md:block" src="/contacts/email.svg"
-                                    alt="Email middle"
+                                <Image className="hidden xl:hidden md:block sm:hidden" src="/contacts/email.svg"
+                                    alt="Email xl"
                                     width={24}
                                     height={24}
                                 />
-                                <Image className="block xl:hidden md:hidden" src="/contacts/email.svg"
+                                <Image className="hidden xl:hidden md:hidden sm:block" src="/contacts/email.svg"
                                     alt="Email mobile"
                                     width={20}
                                     height={20}
                                 />
+                                <Image className="block xl:hidden md:hidden sm:hidden" src="/contacts/email.svg"
+                                    alt="Email sm mobile"
+                                    width={17}
+                                    height={17}
+                                />
                             </div>
-                            <div className="flex flex-col mx-4 w-[320px] gap-1">
+                            <div className="flex flex-col mx-2 sm:mx-4 w-[85%] min-w-[260px] sm:w-[320px] gap-1">
                                 <span className="hidden xl:block text-xl font-medium text-dark-700">Email</span>
-                                <span className="text-lg font-normal">nattakornkhunart@gmail.com</span>
+                                <span className="text-base sm:text-lg font-normal">nattakornkhunart@gmail.com</span>
                             </div>
                         </div>
                     </div>
 
-                    <SendMsgForm className="relative flex items-center justify-center w-full xl:w-1/2 h-[400px] md:h-[460px]" updateMsgState={updateMsgState} />
+                    <SendMsgForm className="relative flex items-center justify-center w-full xl:w-1/2 h-[380px] sm:h-[400px] md:h-[460px]" updateMsgState={updateMsgState} />
 
                 </div>
             </div>

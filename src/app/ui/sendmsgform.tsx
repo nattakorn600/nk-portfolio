@@ -34,14 +34,14 @@ export default function SendMsgForm({
 
     return (
         <div className={className}>
-            <div className="absolute px-auto mx-auto min-w-[400px] w-[95%] max-w-[600px] xl:max-w-[100%] xl:w-[520px] h-full bg-dark-100 opacity-70 rounded-lg z-40"/>
-            <div className="absolute px-auto mx-auto min-w-[400px] w-[95%] max-w-[600px] xl:max-w-[100%] xl:w-[520px] h-full flex flex-col justify-center z-50 px-8 md:px-12 gap-4 xl:gap-6">
-                <span className="text-dark-50 text-xl md:text-2xl font-medium">Send me a message</span>
+            <div className="absolute px-auto mx-auto min-w-[320px] sm:min-w-[400px] w-[95%] max-w-[600px] xl:max-w-[100%] xl:w-[520px] h-full bg-dark-100 opacity-70 rounded-lg z-40"/>
+            <div className="absolute px-auto mx-auto min-w-[320px] sm:min-w-[400px] w-[95%] max-w-[600px] xl:max-w-[100%] xl:w-[520px] h-full flex flex-col justify-center z-50 px-8 md:px-12 gap-4 xl:gap-6">
+                <span className="text-dark-50 text-lg sm:text-xl md:text-2xl font-medium">Send me a message</span>
 
                 <form className="flex flex-col gap-4" action={dispatch} onSubmit={() => handleSubmit()}>
-                    <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} className="w-full font-normal rounded bg-dark-100 bg-opacity-70 py-1 px-3 text-base leading-8 text-dark-50 outline-none focus:ring-2 focus:ring-dark-700 placeholder-dark-400" placeholder="Full Name" required />
-                    <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full font-normal rounded bg-dark-100 bg-opacity-70 py-1 px-3 text-base leading-8 text-dark-50 outline-none focus:ring-2 focus:ring-dark-700 placeholder-dark-400" placeholder="Email" required />
-                    <textarea name="message" value={message} onChange={(e) => setMessage(e.target.value)} className="w-full h-[150px] font-normal rounded bg-dark-100 bg-opacity-70 py-1 px-3 text-base leading-8 text-dark-50 outline-none focus:ring-2 focus:ring-dark-700 resize-none placeholder-dark-400" placeholder="Type your Message..." required />
+                    <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} className="w-full font-normal rounded bg-dark-100 bg-opacity-70 py-1 px-3 text-sm sm:text-base leading-8 text-dark-50 outline-none focus:ring-2 focus:ring-dark-700 placeholder-dark-400" placeholder="Full Name" required />
+                    <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full font-normal rounded bg-dark-100 bg-opacity-70 py-1 px-3 text-sm sm:text-base leading-8 text-dark-50 outline-none focus:ring-2 focus:ring-dark-700 placeholder-dark-400" placeholder="Email" required />
+                    <textarea name="message" value={message} onChange={(e) => setMessage(e.target.value)} className="w-full h-[120px] sm:h-[150px] font-normal rounded bg-dark-100 bg-opacity-70 py-1 px-3 text-sm sm:text-base leading-8 text-dark-50 outline-none focus:ring-2 focus:ring-dark-700 resize-none placeholder-dark-400" placeholder="Type your Message..." required />
                     <button type="submit" className="flex justify-center items-center rounded w-full h-[40px] bg-dark-700 text-dark-50 gap-1 active:bg-[#662FD3]">
                         {!isSending ? (
                             <>

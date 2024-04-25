@@ -47,7 +47,7 @@ export default function ContactPage({
     return (
         <footer id={id} className={className}>
             <div className='absolute w-full h-full z-10'>
-                <img className="w-full h-full object-cover object-bottom" src="contacts/darkbgcontact.jpg" alt="Developer coding on labtop" />
+                <Image className="w-full h-full object-cover object-bottom" width={1280} height={720} src="/contacts/darkbgcontact.jpg" alt="Developer coding on labtop" priority />
             </div>
             <div className="absolute w-full h-full bg-dark-100 opacity-60 z-20" />
             <div className="flex flex-col items-center min-h-screen pt-10 lg:pt-12 xl:py-2t z-30">

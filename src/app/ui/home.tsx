@@ -11,7 +11,8 @@ export default function HomePage({
         <section id={id} className={className}>
             <div className='block lg:absolute flex justify-center h-full w-full z-10'>
               <div className='absolute mx-auto h-1/2 top-0 overflow-hidden lg:right-0 lg:h-full lg:w-1/2'>
-                <Image className="w-full h-full object-cover object-top" width={720} height={720} src="/developer.png" alt="Developer coding on labtop" priority />
+                <Image className="hidden lg:block w-full h-full object-cover object-top" width={720} height={720} src="/developer.png" alt="Developer coding on labtop" priority />
+                <Image className="block lg:hidden w-full h-full object-cover object-top" width={340} height={340} src="/developer.png" alt="Developer coding on labtop" priority />
               </div>
             </div>
 

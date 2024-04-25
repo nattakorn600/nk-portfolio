@@ -23,7 +23,7 @@ export default function AboutPage({
                   <div className='flex flex-col md:flex-row justify-center mt-6 md:mt-2 gap-6 md:gap-16 md:mx-40'>
                     <div className='flex flex-col justify-center items-center gap-4'>
                       <div className='flex justify-center items-center w-[100px] h-[100px] sm:w-[130px] sm:h-[130px] md:w-[170px] md:h-[170px] rounded-full border-[4px] sm:border-[5px] border-dark-700'>
-                        <Image className='w-[85px] h-[85px] sm:w-[110px] sm:h-[110px] md:w-[150px] md:h-[150px] rounded-full' width={110} height={110} src="/profile.jpg" objectFit="cover" alt='Nattakorn profile picture' priority />
+                        <Image className='w-[85px] h-[85px] sm:w-[110px] sm:h-[110px] md:w-[150px] md:h-[150px] rounded-full object-cover' width={110} height={110} src="/profile.jpg" alt='Nattakorn profile picture' priority />
                       </div>
                       <span className='text-base sm:text-lg font-medium'>Nattakorn Khunart</span>
                       <div className='flex justify-center items-center gap-4'>

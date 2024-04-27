@@ -11,7 +11,7 @@ export default function ProjectCard({
     return (
         <div className={`relative group overflow-hidden ${className}`}>
             <Image src={data.img} width={420} height={280} className="hidden sm:block absolute text-wrap transition-none sm:transition-all duration-300 ease-in-out w-full h-full object-cover group-hover:scale-110" alt={`${data.title} image`} priority/>
-            <Image src={data.img} width={360} height={240} className="block sm:hidden absolute text-wrap transition-none sm:transition-all duration-300 ease-in-out w-full h-full object-cover group-hover:scale-110" alt={`${data.title} mobile image`} priority/>
+            <Image src={data.img} width={360} height={240} className="block sm:hidden absolute text-wrap transition-none sm:transition-all duration-300 ease-in-out w-full h-full object-cover" alt={`${data.title} mobile image`} priority/>
             <div className='absolute block bottom-0 left-0 right-0 bg-dark-200 opacity-0 h-full w-0 transition-all ease-in-out duration-300 group-hover:w-full group-hover:opacity-100'/>
             <div className='absolute block bg-dark-600 w-[75px] h-[75px] z-10 rounded-full opacity-0 right-0 top-[calc(50%-37px)] blur-[75px] transition-none sm:transition-all ease-in-out duration-300 group-hover:opacity-100' />
             <div className='absolute block bg-dark-500 w-[75px] h-[75px] z-10 rounded-full opacity-0 left-12 blur-[100px] transition-none sm:transition-all ease-in-out duration-300 group-hover:opacity-100' />

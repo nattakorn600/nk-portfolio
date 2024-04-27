@@ -12,12 +12,12 @@ export default function ProjectCard({
         <div className={`relative group overflow-hidden ${className}`}>
             <Image src={data.img} width={420} height={280} className="hidden sm:block absolute text-wrap transition-none sm:transition-all duration-300 ease-in-out w-full h-full object-cover group-hover:scale-110" alt={`${data.title} image`} priority/>
             <Image src={data.img} width={360} height={240} className="block sm:hidden absolute text-wrap transition-none sm:transition-all duration-300 ease-in-out w-full h-full object-cover group-hover:scale-110" alt={`${data.title} mobile image`} priority/>
-            <div className='absolute block bottom-0 left-0 right-0 bg-dark-200 opacity-0 h-full w-0 transition-none sm:transition-all ease-in-out duration-300 group-hover:w-full group-hover:opacity-100'/>
+            <div className='absolute block bottom-0 left-0 right-0 bg-dark-200 opacity-0 h-full w-0 transition-all ease-in-out duration-300 group-hover:w-full group-hover:opacity-100'/>
             <div className='absolute block bg-dark-600 w-[75px] h-[75px] z-10 rounded-full opacity-0 right-0 top-[calc(50%-37px)] blur-[75px] transition-none sm:transition-all ease-in-out duration-300 group-hover:opacity-100' />
             <div className='absolute block bg-dark-500 w-[75px] h-[75px] z-10 rounded-full opacity-0 left-12 blur-[100px] transition-none sm:transition-all ease-in-out duration-300 group-hover:opacity-100' />
             <div className='absolute block bg-dark-600 w-[75px] h-[75px] z-10 rounded-full opacity-0 pointer-events-none bottom-[-35px] left-20 blur-[75px] transition-none sm:transition-all ease-in-out duration-300 group-hover:opacity-100' />
 
-            <div className='absolute flex flex-col px-4 py-2 sm:px-8 sm:py-4 gap-2 sm:gap-4 mx-auto w-full h-full'>
+            <div className='absolute flex flex-col px-4 py-2 sm:px-8 sm:py-4 gap-2 sm:gap-4 mx-auto w-full h-full sm:transition-none transition-all opacity-0 translate-y-[20px] duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-hover:delay-200'>
                 <h3 className="text-lg sm:text-xl text-center font-normal text-transparent bg-clip-text bg-gradient-to-r from-dark-900 to-dark-800 opacity-0 transition-none sm:transition-all translate-y-[20px] duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-hover:delay-250">{data.title}</h3>
                 <p className="text-sm sm:text-base font-normal text-dark-950 opacity-0 transition-none sm:transition-all translate-y-[20px] duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-hover:delay-200">
                     <span>{data.description}</span>
